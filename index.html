@@ -1,21 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
     <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="./download (2.png" type="image/x-icon">
-    <title>Shoprite</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./download (2.png" type="image/x-icon" />
+    <title>Car Wash Services</title>
 </head>
 <body>
-    <header> 
-        <img src="./download (2.png" alt="" srcset="">
-        <a href="google.com">HOME</a>
-        <a href="">ABOUT</a>
-        <a href="">CONTACT</a>
-        <a href="">SERVICES</a>
-        <button>SIGN UP</button></a>
+    <header>
+        <img src="./download (2.png" alt="Car Wash Logo" />
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#services">SERVICES</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+        <button>SIGN UP</button>
     </header>
+
+    <main>
+        <section id="home" class="section">
+            <h1>Welcome to Our Car Wash</h1>
+            <p>Experience the best car wash service with eco-friendly products and professional care.</p>
+            <p>We offer fast, reliable, and affordable car cleaning solutions to keep your vehicle shining.</p>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <p>We are a family-owned car wash business dedicated to providing top-quality service since 2005.</p>
+            <p>Our team is trained to handle all types of vehicles with care and attention to detail.</p>
+        </section>
+
+        <section id="services" class="section">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Exterior Wash and Wax</li>
+                <li>Interior Vacuum and Cleaning</li>
+                <li>Full-Service Detailing</li>
+                <li>Engine Cleaning</li>
+                <li>Eco-Friendly Wash Options</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
 
     <script src="./index.js"></script>
 </body>
